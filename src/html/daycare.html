@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daycare</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gloria+Hallelujah&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="icon"
+      href="../assests/common-assets/logo.png"
+      type="image/png"
+    />
+  </head>
+  <body class="font-poppins text-base">
+    <header>
+      <nav class="flex items-center justify-between bg-[#38DBFF] px-2 py-1">
+        <a href="../index.html">
+          <div class="logo-name-wrapper flex items-center gap-2">
+            <img src="../assests/common-assets/logo.png" alt="" class="h-10" />
+            <span class="text-sm leading-4 font-semibold"
+              >Shri Chaitanya Mauli <br />
+              Vishwasta Mandal,Sangli</span
+            >
+          </div>
+        </a>
+        <!-- nav-links -->
+        <div
+          class="nav-links absolute top-12 left-0 z-70 flex max-h-0 w-full flex-col items-center gap-4 overflow-hidden bg-[#38DBFF] p-0 opacity-0 transition-all duration-150 ease-in-out lg:relative lg:top-0 lg:left-auto lg:w-fit lg:flex-row lg:gap-10 lg:overflow-visible lg:opacity-100"
+        >
+          <a
+            href="../index.html"
+            class="transition-colors hover:text-white active:text-white"
+            >Home</a
+          >
+          <a
+            href="who-we-are.html"
+            class="transition-colors hover:text-white active:text-white"
+            >Who we are</a
+          >
+          <div class="sub-links-wrapper flex flex-col items-center lg:relative">
+            <div
+              class="sub-links-toggle-button flex items-center gap-1 transition-colors hover:cursor-pointer hover:text-white active:text-white"
+            >
+              What we do<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div
+              class="sub-links z-30 flex max-h-0 flex-col items-center gap-1 overflow-hidden bg-[#38DBFF] px-3 pt-0 text-center opacity-0 transition-all duration-150 ease-in-out lg:absolute lg:top-full lg:min-w-max lg:translate-y-2 lg:transform lg:rounded-b-md lg:pb-0 lg:drop-shadow-xl"
+            >
+              <a
+                href="daycare.html"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >DayCare</a
+              >
+              <a
+                href="sanskar-varga.html"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Sanskar varga</a
+              >
+              <a
+                href="what-we-do.html#immunization-center"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Immunization Center</a
+              >
+              <a
+                href="what-we-do.html#library"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Library</a
+              >
+              <a
+                href="what-we-do.html#vocational-training"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Vocational Training</a
+              >
+              <a
+                href="what-we-do.html#study-center"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Study Center</a
+              >
+              <a
+                href="what-we-do.html#bachat-gat"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Bachat Gat</a
+              >
+              <a
+                href="what-we-do.html#counselling-center"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Counselling Center</a
+              >
+            </div>
+          </div>
+          <a
+            href="support-us.html"
+            class="transition-colors hover:text-white active:text-white"
+            >Support us</a
+          >
+          <a
+            href="contact-us.html"
+            class="transition-colors hover:text-white active:text-white"
+            >Contact us</a
+          >
+        </div>
+        <div class="btn-hamburger-wrapper flex items-center gap-2">
+          <a href="support-us.html">
+            <div class="button-hug-donate">Donate</div>
+          </a>
+          <div class="hamburger-wrapper text-2xl lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- herosection -->
+      <div
+        class="hero-section relative h-[400px] w-full md:h-[720px] lg:h-[840px]"
+      >
+        <img
+          src="../assests/day-care-page/herosection-images/hero-section-image.jpg"
+          alt=""
+          class="h-full w-full object-cover object-center"
+        />
+        <div
+          class="bottom-overlay absolute bottom-0 z-40 h-24 w-full transform md:h-40 lg:h-48"
+        ></div>
+      </div>
+      <!-- frame-1  -->
+      <div
+        class="frame relative z-50 -mt-28 mb-6 flex flex-col items-center gap-6 px-4 md:-mt-48 md:mb-8 md:gap-8 md:px-16 lg:mb-10 lg:gap-10 lg:px-[120px]"
+      >
+        <!-- intro card -->
+        <div
+          class="intro-card fade-in flex max-w-[1200px] flex-col items-center gap-4 rounded-4xl bg-gradient-to-t from-white to-[#ffffff90] p-6 px-16 shadow-lg lg:gap-5"
+        >
+          <div class="wrapper relative flex gap-2 text-[#FF0051]">
+            <div
+              class="icons absolute top-0 -m-12 flex w-full transform gap-28 overflow-visible lg:-m-16 lg:translate-x-4"
+            >
+              <img
+                src="../assests/icons/daycareicon1.png"
+                alt=""
+                class="w-24 lg:w-28"
+              />
+              <img
+                src="../assests/icons/daycareicon2.png"
+                alt=""
+                class="h-[90px] transform lg:h-28 lg:translate-x-12"
+              />
+            </div>
+            <p class="z-20 text-center text-5xl font-medium lg:text-6xl">Day</p>
+            <p class="font-gloria z-20 text-center text-5xl lg:text-6xl">
+              Care
+            </p>
+          </div>
+          <p class="text text-center text-[#555555] lg:text-lg">
+            A second home for little hearts to blossom where imaginations soar
+            and friendship grow,providing a safe,nurturing envirnment filled
+            with warmth care laughter,learning and creativity ensuring the
+            children thrive well while their parents focus on jobs,this has been
+            running since 1966
+          </p>
+          <div class="button-hug">Know more</div>
+        </div>
+        <!-- routine-container -->
+        <div
+          class="routine-container fade-in flex flex-col items-center gap-3 lg:gap-4"
+        >
+          <p class="text-2xl font-medium text-[#FF0051] lg:text-3xl">
+            Daily routine
+          </p>
+          <div
+            class="routine-card-wrapper relative flex max-w-[600px] flex-col gap-4 lg:gap-6"
+          >
+            <div
+              class="line absolute top-14 bottom-6 left-7 z-0 w-0.5 bg-[#989898] lg:bottom-8"
+            ></div>
+            <!-- card -->
+            <div class="card flex items-center gap-10">
+              <img
+                src="../assests/day-care-page/daily-routine-icons/prayer.png"
+                class="relative z-10 h-14 w-14 drop-shadow-lg lg:h-16 lg:w-16"
+                alt=""
+              />
+              <div
+                class="content flex flex-col rounded-2xl bg-white p-4 shadow-lg lg:p-6"
+              >
+                <p class="text-lg font-medium text-[#16325B] lg:text-xl">
+                  10:00 am Prayer
+                </p>
+                <p class="text-sm">
+                  the daycare starts with prayer around 10am followed by group
+                  activites
+                </p>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="card flex items-center gap-10">
+              <img
+                src="../assests/day-care-page/daily-routine-icons/lunch.png"
+                class="relative z-10 h-14 w-14 drop-shadow-lg lg:h-16 lg:w-16"
+                alt=""
+              />
+              <div
+                class="content flex flex-col rounded-2xl bg-white p-4 shadow-lg lg:p-6"
+              >
+                <p class="text-lg font-medium text-[#16325B] lg:text-xl">
+                  12:00-12:45pm Lunch
+                </p>
+                <p class="text-sm">
+                  Children are served nutritious and well-balanced meals to
+                  support their growth and health.
+                </p>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="card flex items-center gap-10">
+              <img
+                src="../assests/day-care-page/daily-routine-icons/story-telling-icon.png"
+                class="relative z-10 h-14 w-14 drop-shadow-lg lg:h-16 lg:w-16"
+                alt=""
+              />
+              <div
+                class="content flex flex-col rounded-2xl bg-white p-4 shadow-lg lg:p-6"
+              >
+                <p class="text-lg font-medium text-[#16325B] lg:text-xl">
+                  12:45-1:30pm Story telling
+                </p>
+                <p class="text-sm">
+                  Children engage in immersive storytelling that sparks
+                  creativity and imagination.
+                </p>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="card flex items-center gap-10">
+              <img
+                src="../assests/day-care-page/daily-routine-icons/sleeping-hours-icon.png"
+                class="relative z-10 h-14 w-14 drop-shadow-lg lg:h-16 lg:w-16"
+                alt=""
+              />
+              <div
+                class="content flex flex-col rounded-2xl bg-white p-4 shadow-lg lg:p-6"
+              >
+                <p class="text-lg font-medium text-[#16325B] lg:text-xl">
+                  1:30-3:00pm Sleeping hours
+                </p>
+                <p class="text-sm">
+                  Children enjoy restful sleep with proper hours to support
+                  growth and well-being.
+                </p>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="card flex items-center gap-10">
+              <img
+                src="../assests/day-care-page/daily-routine-icons/physical-activity-icon.png"
+                class="relative z-10 h-14 w-14 drop-shadow-lg lg:h-16 lg:w-16"
+                alt=""
+              />
+              <div
+                class="content flex flex-col rounded-2xl bg-white p-4 shadow-lg lg:p-6"
+              >
+                <p class="text-lg font-medium text-[#16325B] lg:text-xl">
+                  3:00-4:15 Physical activity
+                </p>
+                <p class="text-sm">
+                  Children engage in regular physical activities to stay active
+                  and healthy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- memories slider -->
+      <div
+        class="memories-container fade-in flex w-full flex-col items-center gap-3 lg:gap-4"
+      >
+        <h2 class="text-2xl font-medium text-black lg:text-3xl">Memories</h2>
+        <div class="swiper h-[400px] w-full" id="slider-1">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide !w-full max-w-[1100px]">
+              <img
+                src="../assests/day-care-page/slider-images/1.jpeg"
+                class="h-full w-full object-cover object-center lg:rounded-4xl"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide !w-full max-w-[1100px]">
+              <img
+                src="../assests/day-care-page/slider-images/1.jpeg"
+                class="h-full w-full object-cover object-center lg:rounded-4xl"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide !w-full max-w-[1100px]">
+              <img
+                src="../assests/day-care-page/slider-images/1.jpeg"
+                class="h-full w-full object-cover object-center lg:rounded-4xl"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide !w-full max-w-[1100px]">
+              <img
+                src="../assests/day-care-page/slider-images/1.jpeg"
+                class="h-full w-full object-cover object-center lg:rounded-4xl"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+            <!-- Slides -->
+            <div class="swiper-slide !w-full max-w-[1100px]">
+              <img
+                src="../assests/day-care-page/slider-images/1.jpeg"
+                class="h-full w-full object-cover object-center lg:rounded-4xl"
+                alt=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- frame 2 -->
+      <div
+        class="frame-2 relative flex flex-col gap-6 overflow-hidden bg-[#E0FFFF] px-4 py-6 md:gap-8 md:px-16 md:py-8 lg:gap-10 lg:px-[120px] lg:py-10"
+      >
+        <div class="top-overlay absolute top-0 left-0 h-10 w-screen"></div>
+
+        <!-- what we provide -->
+        <div
+          class="what-we-provide-container fade-in relative flex flex-col items-center gap-3 lg:gap-5"
+        >
+          <p class="z-20 text-2xl font-medium lg:text-3xl">What we provide</p>
+
+          <div
+            class="card-wrapper flex w-full flex-col flex-wrap justify-center gap-5 md:gap-6 lg:flex-row lg:gap-x-8 lg:gap-y-8"
+          >
+            <!-- accordian -->
+            <div
+              class="accordian flex max-w-[800px] flex-1 flex-col overflow-hidden rounded-2xl bg-white px-4 py-6 shadow-md lg:min-w-[600px] lg:px-10 lg:py-10"
+            >
+              <div class="upper flex w-full items-center justify-between">
+                <div class="wrapper flex items-center gap-3 lg:gap-4">
+                  <img
+                    src="../assests/day-care-page/what-we-provide-icons/qualified-staff.png"
+                    alt=""
+                    class="h-14 w-14"
+                  />
+                  <div
+                    class="subtitle text-base font-medium text-[#16325B] lg:text-xl"
+                  >
+                    Qualified staff and optimum child to staff ratio
+                  </div>
+                </div>
+                <img
+                  src="../assests/icons/caret.png"
+                  alt=""
+                  class="caret ml-5 h-6 w-6 rotate-0 transition-all duration-100 lg:hidden"
+                />
+              </div>
+
+              <div
+                class="lower max-h-0 overflow-hidden px-2 pt-0 opacity-0 transition-all duration-150 ease-in-out lg:max-h-full lg:px-0 lg:pt-4 lg:opacity-100"
+              >
+                staff is experienced and well trained,training of staff for
+                improvement in care giving abilities and knowledge is encouraged
+                most of the staff is working with NGO since last 10 yrs or more
+                a group of 25 students is catered by 2 staff members (1 teacher
+                and 1 supporting staff)
+              </div>
+            </div>
+            <!-- accordian -->
+            <div
+              class="accordian flex max-w-[800px] flex-1 flex-col overflow-hidden rounded-2xl bg-white px-4 py-6 shadow-md lg:min-w-[600px] lg:px-10 lg:py-10"
+            >
+              <div class="upper flex w-full items-center justify-between">
+                <div class="wrapper flex items-center gap-3 lg:gap-4">
+                  <img
+                    src="../assests/day-care-page/what-we-provide-icons/activities-and-cerriculum.png"
+                    alt=""
+                    class="h-14 w-14"
+                  />
+                  <div
+                    class="subtitle text-base font-medium text-[#16325B] lg:text-xl"
+                  >
+                    Activities and Cerriculum
+                  </div>
+                </div>
+                <img
+                  src="../assests/icons/caret.png"
+                  alt=""
+                  class="caret ml-5 h-6 w-6 rotate-0 transition-all duration-100 lg:hidden"
+                />
+              </div>
+
+              <div
+                class="lower max-h-0 overflow-hidden px-2 pt-0 opacity-0 transition-all duration-150 ease-in-out lg:max-h-full lg:px-0 lg:pt-4 lg:opacity-100"
+              >
+                we encourage the holistic development of a child,encouraging
+                developmental milestones through activities like
+                Art,Music,Outdoor play and early literacy skills.All the
+                children irrespective of their social background are encouraged
+                to participate in group activities thus sowing the seed of
+                patriotism since childhood
+              </div>
+            </div>
+            <!-- accordian -->
+            <div
+              class="accordian flex max-w-[800px] flex-1 flex-col overflow-hidden rounded-2xl bg-white px-4 py-6 shadow-md lg:min-w-[600px] lg:px-10 lg:py-10"
+            >
+              <div class="upper flex w-full items-center justify-between">
+                <div class="wrapper flex items-center gap-3 lg:gap-4">
+                  <img
+                    src="../assests/day-care-page/what-we-provide-icons/safe-and-clean.png"
+                    alt=""
+                    class="h-14 w-14"
+                  />
+                  <div
+                    class="subtitle text-base font-medium text-[#16325B] lg:text-xl"
+                  >
+                    safe and clean environment
+                  </div>
+                </div>
+                <img
+                  src="../assests/icons/caret.png"
+                  alt=""
+                  class="caret ml-5 h-6 w-6 rotate-0 transition-all duration-100 lg:hidden"
+                />
+              </div>
+
+              <div
+                class="lower max-h-0 overflow-hidden px-2 pt-0 opacity-0 transition-all duration-150 ease-in-out lg:max-h-full lg:px-0 lg:pt-4 lg:opacity-100"
+              >
+                Ours is a childproofed space with maintenance of cleanliness and
+                adherence to health and safety guidelines, including proper
+                sanitation practices.
+              </div>
+            </div>
+            <!-- accordian -->
+            <div
+              class="accordian flex max-w-[800px] flex-1 flex-col overflow-hidden rounded-2xl bg-white px-4 py-6 shadow-md lg:min-w-[600px] lg:px-10 lg:py-10"
+            >
+              <div class="upper flex w-full items-center justify-between">
+                <div class="wrapper flex items-center gap-3 lg:gap-4">
+                  <img
+                    src="../assests/day-care-page/what-we-provide-icons/nutrition-meal .png"
+                    alt=""
+                    class="h-14 w-14"
+                  />
+                  <div
+                    class="subtitle text-base font-medium text-[#16325B] lg:text-xl"
+                  >
+                    Nutrition and Meal plans
+                  </div>
+                </div>
+                <img
+                  src="../assests/icons/caret.png"
+                  alt=""
+                  class="caret ml-5 h-6 w-6 rotate-0 transition-all duration-100 lg:hidden"
+                />
+              </div>
+
+              <div
+                class="lower max-h-0 overflow-hidden px-2 pt-0 opacity-0 transition-all duration-150 ease-in-out lg:max-h-full lg:px-0 lg:pt-4 lg:opacity-100"
+              >
+                we daily provide balanced nutricious food.Care is taken to
+                prepare various types of food with adequate use of
+                protiens,carbohydrates,fats,minerals etc and priority given to
+                use locally available fresh and green leafy vegetables and
+                seasonal fruits.
+              </div>
+            </div>
+            <!-- accordian -->
+            <div
+              class="accordian flex max-w-[800px] flex-1 flex-col overflow-hidden rounded-2xl bg-white px-4 py-6 shadow-md lg:min-w-[600px] lg:px-10 lg:py-10"
+            >
+              <div class="upper flex w-full items-center justify-between">
+                <div class="wrapper flex items-center gap-3 lg:gap-4">
+                  <img
+                    src="../assests/day-care-page/what-we-provide-icons/parent-communication.png"
+                    alt=""
+                    class="h-14 w-14"
+                  />
+                  <div
+                    class="subtitle text-base font-medium text-[#16325B] lg:text-xl"
+                  >
+                    Parent communication and involvement
+                  </div>
+                </div>
+                <img
+                  src="../assests/icons/caret.png"
+                  alt=""
+                  class="caret ml-5 h-6 w-6 rotate-0 transition-all duration-100 lg:hidden"
+                />
+              </div>
+
+              <div
+                class="lower max-h-0 overflow-hidden px-2 pt-0 opacity-0 transition-all duration-150 ease-in-out lg:max-h-full lg:px-0 lg:pt-4 lg:opacity-100"
+              >
+                For children – Events are arranged every year. Children
+                participate in various competitions, dances, plays, etc. For
+                parents – To foster mutual acquaintance among parents and
+                strengthen the bond between the Sanstha and parents, various
+                competitions are organized for parents, such as intellectual
+                competitions (essay, debate, etc., on current and social
+                topics), cooking, and decoration competitions for mothers. Guest
+                lectures are arranged for parents on topics like better
+                parenting, hazards of plastics, and minimizing its use, etc.,
+                regularly.
+              </div>
+            </div>
+
+            <!-- accordian -->
+            <div
+              class="accordian flex max-w-[800px] flex-1 flex-col overflow-hidden rounded-2xl bg-white px-4 py-6 shadow-md lg:min-w-[600px] lg:px-10 lg:py-10"
+            >
+              <div class="upper flex w-full items-center justify-between">
+                <div class="wrapper flex items-center gap-3 lg:gap-4">
+                  <img
+                    src="../assests/day-care-page/what-we-provide-icons/check-up.png"
+                    alt=""
+                    class="h-14 w-14"
+                  />
+                  <div
+                    class="subtitle text-base font-medium text-[#16325B] lg:text-xl"
+                  >
+                    Regular health checkup
+                  </div>
+                </div>
+                <img
+                  src="../assests/icons/caret.png"
+                  alt=""
+                  class="caret ml-5 h-6 w-6 rotate-0 transition-all duration-100 lg:hidden"
+                />
+              </div>
+
+              <div
+                class="lower max-h-0 overflow-hidden px-2 pt-0 opacity-0 transition-all duration-150 ease-in-out lg:max-h-full lg:px-0 lg:pt-4 lg:opacity-100"
+              >
+                Regular health checkups with advice from experts (pediatricians)
+                are arranged twice a year. Physical parameters like height and
+                weight are recorded, and any discrepancy in a child's growth is
+                immediately informed to the parents. Routine deworming practices
+                are advised.
+              </div>
+            </div>
+            <!-- accordian -->
+            <div
+              class="accordian flex max-w-[800px] flex-1 flex-col overflow-hidden rounded-2xl bg-white px-4 py-6 shadow-md lg:min-w-[600px] lg:px-10 lg:py-10"
+            >
+              <div class="upper flex w-full items-center justify-between">
+                <div class="wrapper flex items-center gap-3 lg:gap-4">
+                  <img
+                    src="../assests/day-care-page/what-we-provide-icons/festival.png"
+                    alt=""
+                    class="h-14 w-14"
+                  />
+                  <div
+                    class="subtitle text-base font-medium text-[#16325B] lg:text-xl"
+                  >
+                    Embibing Indian tradition
+                  </div>
+                </div>
+                <img
+                  src="../assests/icons/caret.png"
+                  alt=""
+                  class="caret ml-5 h-6 w-6 rotate-0 transition-all duration-100 lg:hidden"
+                />
+              </div>
+
+              <div
+                class="lower max-h-0 overflow-hidden px-2 pt-0 opacity-0 transition-all duration-150 ease-in-out lg:max-h-full lg:px-0 lg:pt-4 lg:opacity-100"
+              >
+                To foster an understanding of our culture, various festivals are
+                celebrated with great joy and enthusiasm. The Palkhi procession,
+                which takes place in the month of Ashadh (in Marathi), is
+                especially beautiful. During Holika Dahan, children are taught
+                to burn away bad traits and nurture good qualities, promoting
+                moral growth. Even national festivals like Independence Day
+                (15th August) and Republic Day (26th January) are celebrated
+                with flag hoisting.
+              </div>
+            </div>
+
+            <!-- accordian -->
+            <div
+              class="accordian flex max-w-[800px] flex-1 flex-col overflow-hidden rounded-2xl bg-white px-4 py-6 shadow-md lg:min-w-[600px] lg:px-10 lg:py-10"
+            >
+              <div class="upper flex w-full items-center justify-between">
+                <div class="wrapper flex items-center gap-3 lg:gap-4">
+                  <img
+                    src="../assests/day-care-page/what-we-provide-icons/sports.png"
+                    alt=""
+                    class="h-14 w-14"
+                  />
+                  <div
+                    class="subtitle text-base font-medium text-[#16325B] lg:text-xl"
+                  >
+                    Annual Gathering and Sports
+                  </div>
+                </div>
+                <img
+                  src="../assests/icons/caret.png"
+                  alt=""
+                  class="caret ml-5 h-6 w-6 rotate-0 transition-all duration-100 lg:hidden"
+                />
+              </div>
+
+              <div
+                class="lower max-h-0 overflow-hidden px-2 pt-0 opacity-0 transition-all duration-150 ease-in-out lg:max-h-full lg:px-0 lg:pt-4 lg:opacity-100"
+              >
+                For children – Events are arranged every year. Children
+                participate in various competitions, dances, plays, etc. For
+                parents – To foster mutual acquaintance among parents and
+                strengthen the bond between the Sanstha and parents, various
+                competitions are organized for parents, such as intellectual
+                competitions (essay, debate, etc., on current and social
+                topics), cooking, and decoration competitions for mothers. Guest
+                lectures are arranged for parents on topics like better
+                parenting, hazards of plastics, and minimizing its use, etc.,
+                regularly.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- trust currently operates -->
+        <div
+          class="trust-currently-operates-container fade-in flex w-full flex-col items-center gap-3 drop-shadow-md lg:gap-4"
+        >
+          <h2 class="text-2xl font-medium text-black lg:text-3xl">
+            Trust currently operates
+          </h2>
+          <div
+            class="card-wrapper flex w-full flex-wrap justify-center gap-6 rounded-4xl bg-[#fff4f9] p-6 md:gap-8 lg:gap-10 lg:p-16 lg:pb-6"
+          >
+            <!-- card -->
+            <a href="../html/daycare.html">
+              <div
+                class="card flex max-w-[330px] min-w-[280px] flex-1 items-center gap-4"
+              >
+                <img
+                  src="../assests/home-page/what-we-provide-icons/day-care.png"
+                  class="h-16 w-16"
+                  alt=""
+                />
+
+                <div class="content">
+                  <div
+                    class="title text-lg font-medium text-[#FF0051] lg:text-xl"
+                  >
+                    Daycare
+                  </div>
+                  <div class="description">
+                    A safe,stimulating space to nurture young minds crucial for
+                    children’s early development
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="what-we-do.html#immunization-center">
+              <div
+                class="card flex max-w-[330px] min-w-[280px] flex-1 items-center gap-4"
+              >
+                <img
+                  src="../assests/home-page/what-we-provide-icons/immunization-center.png"
+                  class="h-16 w-16"
+                  alt=""
+                />
+
+                <div class="content">
+                  <div
+                    class="title text-lg font-medium text-[#FF0051] lg:text-xl"
+                  >
+                    Immunization Center
+                  </div>
+                  <div class="description">
+                    Protect today, stay healthy tomorrow! Safeguard health,
+                    prevent disease, and boost community immunity.
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- card -->
+            <a href="what-we-do.html#library">
+              <div
+                class="card flex max-w-[330px] min-w-[280px] flex-1 items-center gap-4"
+              >
+                <img
+                  src="../assests/home-page/what-we-provide-icons/library.png"
+                  class="h-16 w-16"
+                  alt=""
+                />
+
+                <div class="content">
+                  <div
+                    class="title text-lg font-medium text-[#FF0051] lg:text-xl"
+                  >
+                    Library
+                  </div>
+                  <div class="description">
+                    A world of knowledge by making books and resources
+                    accessible to all in one play
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="what-we-do.html#vocational-training">
+              <div
+                class="card flex max-w-[330px] min-w-[280px] flex-1 items-center gap-4"
+              >
+                <img
+                  src="../assests/home-page/what-we-provide-icons/vocational-training.png"
+                  class="h-16 w-16"
+                  alt=""
+                />
+
+                <div class="content">
+                  <div
+                    class="title text-lg font-medium text-[#FF0051] lg:text-xl"
+                  >
+                    Vocational Training
+                  </div>
+                  <div class="description">
+                    Imparting skills for success,paths to prosperity by
+                    equipping young ones with practical expertise
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- card -->
+            <a href="what-we-do.html#study-center">
+              <div
+                class="card flex max-w-[330px] min-w-[280px] flex-1 items-center gap-4"
+              >
+                <img
+                  src="../assests/home-page/what-we-provide-icons/study-center.png"
+                  class="h-16 w-16"
+                  alt=""
+                />
+
+                <div class="content">
+                  <div
+                    class="title text-lg font-medium text-[#FF0051] lg:text-xl"
+                  >
+                    Study Center
+                  </div>
+                  <div class="description">
+                    Helping students improve academically, grow
+                    personally,creating strong pathways to future success
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- card -->
+            <a href="what-we-do.html#bachat-gat">
+              <div
+                class="card flex max-w-[330px] min-w-[280px] flex-1 items-center gap-4"
+              >
+                <img
+                  src="../assests/home-page/what-we-provide-icons/bachat-gat.png"
+                  class="h-16 w-16"
+                  alt=""
+                />
+
+                <div class="content">
+                  <div
+                    class="title text-lg font-medium text-[#FF0051] lg:text-xl"
+                  >
+                    Bachat Ghat
+                  </div>
+                  <div class="description">
+                    A safe,stimulating space to nurture young minds crucial for
+                    children’s early development
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- card -->
+            <a href="what-we-do.html#counselling-center">
+              <div
+                class="card flex max-w-[330px] min-w-[280px] flex-1 items-center gap-4"
+              >
+                <img
+                  src="../assests/home-page/what-we-provide-icons/counselling-center.png"
+                  class="h-16 w-16"
+                  alt=""
+                />
+
+                <div class="content">
+                  <div
+                    class="title text-lg font-medium text-[#FF0051] lg:text-xl"
+                  >
+                    Counselling Center
+                  </div>
+                  <div class="description">
+                    A safe space to nurture mental well-being, empowering
+                    individuals to overcome challenges and thrive in life
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <!-- card -->
+            <a href="what-we-do.html#study-center">
+              <div
+                class="card flex max-w-[330px] min-w-[280px] flex-1 items-center gap-4"
+              >
+                <img
+                  src="../assests/home-page/what-we-provide-icons/study-center.png"
+                  class="h-16 w-16"
+                  alt=""
+                />
+
+                <div class="content">
+                  <div
+                    class="title text-lg font-medium text-[#FF0051] lg:text-xl"
+                  >
+                    Study Center
+                  </div>
+                  <div class="description">
+                    Helping students improve academically, grow
+                    personally,creating strong pathways to future success
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="what-we-do.html">
+              <div class="flex w-full justify-center">
+                <div class="button-hug">Know more</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="box-sizing fade-in flex flex-col gap-2 bg-[#2BD1FC] p-2">
+      <div class="sociallinks">
+        <ul class="flex gap-2 text-xl lg:gap-4 lg:text-2xl">
+          <li class="transition-all duration-150 ease-in-out hover:text-white">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="transition-all duration-150 ease-in-out hover:text-white">
+            <a
+              href="https://www.instagram.com/shri.chaintanyamauliv.mandal?igsh=Z285dDRyd3V5bzhp"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li class="transition-all duration-150 ease-in-out hover:text-white">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="links flex gap-4 text-white">
+        <a
+          href=""
+          class="transition-all duration-150 ease-in-out hover:text-black"
+          >Home</a
+        >
+        <a
+          href=""
+          class="transition-all duration-150 ease-in-out hover:text-black"
+          >What we do</a
+        >
+        <a
+          href=""
+          class="transition-all duration-150 ease-in-out hover:text-black"
+          >Contact us</a
+        >
+        <a
+          href=""
+          class="transition-all duration-150 ease-in-out hover:text-black"
+          >Contact us</a
+        >
+      </div>
+      <div>
+        <p class="font-bold">Visit us</p>
+        <div class="address text-white">
+          VH2J+XH5, near shanti ketan school, South Shivaji Nagar, Panchsheel
+          nagar,<br />
+          Sangli, Sangli Miraj Kupwad, Maharashtra 416416
+        </div>
+      </div>
+      <div class="copyright text-xs">
+        <p>&copy; Shri Chaitanya Mauli Vishwasta Mandai,Sangli</p>
+      </div>
+    </footer>
+    <script src="../scripts/daycare.js"></script>
+    <script src="../scripts/common.js"></script>
+  </body>
+</html>

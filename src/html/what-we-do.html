@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What we do</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Borel&family=Gloria+Hallelujah&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="icon"
+      href="../assests/common-assets/logo.png"
+      type="image/png"
+    />
+  </head>
+  <body class="font-poppins text-base">
+    <header>
+      <nav class="flex items-center justify-between bg-[#38DBFF] px-2 py-1">
+        <a href="../index.html">
+          <div class="logo-name-wrapper flex items-center gap-2">
+            <img src="../assests/common-assets/logo.png" alt="" class="h-10" />
+            <span class="text-sm leading-4 font-semibold"
+              >Shri Chaitanya Mauli <br />
+              Vishwasta Mandal,Sangli</span
+            >
+          </div>
+        </a>
+        <!-- nav-links -->
+        <div
+          class="nav-links absolute top-12 left-0 z-70 flex max-h-0 w-full flex-col items-center gap-4 overflow-hidden bg-[#38DBFF] p-0 opacity-0 transition-all duration-150 ease-in-out lg:relative lg:top-0 lg:left-auto lg:w-fit lg:flex-row lg:gap-10 lg:overflow-visible lg:opacity-100"
+        >
+          <a
+            href="../index.html"
+            class="transition-colors hover:text-white active:text-white"
+            >Home</a
+          >
+          <a
+            href="who-we-are.html"
+            class="transition-colors hover:text-white active:text-white"
+            >Who we are</a
+          >
+          <div class="sub-links-wrapper flex flex-col items-center lg:relative">
+            <div
+              class="sub-links-toggle-button flex items-center gap-1 transition-colors hover:cursor-pointer hover:text-white active:text-white"
+            >
+              What we do<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div
+              class="sub-links z-30 flex max-h-0 flex-col items-center gap-1 overflow-hidden bg-[#38DBFF] px-3 pt-0 text-center opacity-0 transition-all duration-150 ease-in-out lg:absolute lg:top-full lg:min-w-max lg:translate-y-2 lg:transform lg:rounded-b-md lg:pb-0 lg:drop-shadow-xl"
+            >
+              <a
+                href="daycare.html"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >DayCare</a
+              >
+              <a
+                href="sanskar-varga.html"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Sanskar varga</a
+              >
+              <a
+                href="what-we-do.html#immunization-center"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Immunization Center</a
+              >
+              <a
+                href="what-we-do.html#library"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Library</a
+              >
+              <a
+                href="what-we-do.html#vocational-training"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Vocational Training</a
+              >
+              <a
+                href="what-we-do.html#study-center"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Study Center</a
+              >
+              <a
+                href="what-we-do.html#bachat-gat"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Bachat Gat</a
+              >
+              <a
+                href="what-we-do.html#counselling-center"
+                class="rounded transition-colors active:text-white lg:w-full lg:px-3 lg:py-2 lg:text-sm lg:hover:bg-gray-100"
+                >Counselling Center</a
+              >
+            </div>
+          </div>
+          <a
+            href="support-us.html"
+            class="transition-colors hover:text-white active:text-white"
+            >Support us</a
+          >
+          <a
+            href="contact-us.html"
+            class="transition-colors hover:text-white active:text-white"
+            >Contact us</a
+          >
+        </div>
+        <div class="btn-hamburger-wrapper flex items-center gap-2">
+          <a href="support-us.html">
+            <div class="button-hug-donate">Donate</div>
+          </a>
+          <div class="hamburger-wrapper text-2xl lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- herosection -->
+      <div
+        class="hero-section relative h-[400px] w-full md:h-[720px] lg:h-[840px]"
+      >
+        <img
+          src="../assests/what-we-do-page/herosection-images/hero-section-image.jpg"
+          alt=""
+          class="h-full w-full object-cover object-center"
+        />
+        <div
+          class="bottom-overlay absolute bottom-0 z-40 h-24 w-full transform md:h-40 lg:h-48"
+        ></div>
+      </div>
+      <!-- frame-1  -->
+      <div
+        class="frame relative z-50 -mt-28 mb-6 flex flex-col items-center gap-6 px-4 md:-mt-48 md:mb-8 md:gap-8 md:px-16 lg:mb-10 lg:gap-24 lg:px-[120px]"
+      >
+        <!-- intro card -->
+        <div
+          class="intro-card fade-in flex max-w-[1200px] flex-col items-center gap-4 rounded-4xl bg-gradient-to-t from-white to-[#ffffff90] p-6 px-16 shadow-lg lg:gap-5"
+        >
+          <p
+            class="font-borel z-20 translate-y-5 transform text-center text-4xl font-medium text-[#FF0051]"
+          >
+            What we do
+          </p>
+          <p class="text text-center text-[#555555] lg:text-lg">
+            We always strive to launch impactful initiatives that help society
+            grow, evolve, and empower every individual
+          </p>
+        </div>
+        <!-- card -->
+        <div
+          class="card fade-in flex w-full max-w-[1700px] flex-col gap-3 md:flex-row md:items-center lg:gap-14"
+          id="daycare"
+        >
+          <img
+            src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+            alt=""
+            class="hidden h-[300px] w-1/2 rounded-xl object-cover object-center md:inline lg:h-[400px]"
+          />
+          <div class="flex flex-col items-center gap-3 md:items-start lg:gap-4">
+            <h2
+              class="text-center text-2xl font-medium md:text-left md:text-3xl"
+            >
+              Day Care
+            </h2>
+            <img
+              src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+              alt=""
+              class="h-[300px] w-screen overflow-visible object-cover object-center md:hidden"
+            />
+            <p class="text-center text-base leading-relaxed md:text-left">
+              A second home for little hearts to blossom where imaginations soar
+              and friendship grow,providing a safe,nurturing envirnment filled
+              with warmth care laughter,learning and creativity ensuring the
+              children thrive well while their parents focus on jobs,this has
+              been running since 1966
+            </p>
+            <a href="daycare.html">
+              <div class="button-hug w-fit">Know more</div>
+            </a>
+          </div>
+        </div>
+        <!-- card -->
+        <div
+          class="card fade-in flex w-full max-w-[1700px] flex-col gap-3 md:flex-row md:items-center lg:gap-14"
+          id="sanskar-warg"
+        >
+          <div class="flex flex-col items-center gap-3 md:items-start lg:gap-4">
+            <h2
+              class="text-center text-2xl font-medium md:text-left md:text-3xl"
+            >
+              Sanskar-Warg
+            </h2>
+            <img
+              src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+              alt=""
+              class="h-[300px] w-screen overflow-visible object-cover object-center md:hidden"
+            />
+            <p class="text-center text-base leading-relaxed md:text-left">
+              Shaping character and behaviour for a better future! Empowering
+              children with values, ethics, and integrity today for brighter,
+              kinder citizens of tomorrow.
+            </p>
+            <a href="sanskar-varga.html">
+              <div class="button-hug w-fit">Know more</div>
+            </a>
+          </div>
+
+          <img
+            src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+            alt=""
+            class="hidden h-[300px] w-1/2 rounded-xl object-cover object-center md:inline lg:h-[400px]"
+          />
+        </div>
+        <!-- card -->
+        <div
+          class="card fade-in flex w-full max-w-[1700px] flex-col gap-3 md:flex-row md:items-center lg:gap-14"
+          id="bachat-gat"
+        >
+          <img
+            src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+            alt=""
+            class="hidden h-[300px] w-1/2 rounded-xl object-cover object-center md:inline lg:h-[400px]"
+          />
+          <div class="flex flex-col items-center gap-3 md:items-start lg:gap-4">
+            <h2
+              class="text-center text-2xl font-medium md:text-left md:text-3xl"
+            >
+              Self help Group
+            </h2>
+            <img
+              src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+              alt=""
+              class="h-[300px] w-screen overflow-visible object-cover object-center md:hidden"
+            />
+            <p class="text-center text-base leading-relaxed md:text-left">
+              Transforming communities! Uniting skills, building confidence, and
+              creating financial independence for a better future.
+            </p>
+          </div>
+        </div>
+        <!-- card -->
+        <div
+          class="card fade-in flex w-full max-w-[1700px] flex-col gap-3 md:flex-row md:items-center lg:gap-14"
+          id="study-center"
+        >
+          <div class="flex flex-col items-center gap-3 md:items-start lg:gap-4">
+            <h2
+              class="text-center text-2xl font-medium md:text-left md:text-3xl"
+            >
+              Study center
+            </h2>
+            <img
+              src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+              alt=""
+              class="h-[300px] w-screen overflow-visible object-cover object-center md:hidden"
+            />
+            <p class="text-center text-base leading-relaxed md:text-left">
+              Enhancing academic performance and personal development Helping
+              students unlock their potential and create pathways to success.
+            </p>
+          </div>
+
+          <img
+            src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+            alt=""
+            class="hidden h-[300px] w-1/2 rounded-xl object-cover object-center md:inline lg:h-[400px]"
+          />
+        </div>
+        <!-- card -->
+        <div
+          class="card fade-in flex w-full max-w-[1700px] flex-col gap-3 md:flex-row md:items-center lg:gap-14"
+          id="library"
+        >
+          <img
+            src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+            alt=""
+            class="hidden h-[300px] w-1/2 rounded-xl object-cover object-center md:inline lg:h-[400px]"
+          />
+          <div class="flex flex-col items-center gap-3 md:items-start lg:gap-4">
+            <h2
+              class="text-center text-2xl font-medium md:text-left md:text-3xl"
+            >
+              Library
+            </h2>
+            <img
+              src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+              alt=""
+              class="h-[300px] w-screen overflow-visible object-cover object-center md:hidden"
+            />
+            <p class="text-center text-base leading-relaxed md:text-left">
+              Encouraging education personal growth study and reflection! A
+              world of knowledge by making books and resrouces to accessible to
+              all in one place
+            </p>
+          </div>
+        </div>
+        <!-- card -->
+        <div
+          class="card fade-in flex w-full max-w-[1700px] flex-col gap-3 md:flex-row md:items-center lg:gap-14"
+          id="vocational-training"
+        >
+          <div class="flex flex-col items-center gap-3 md:items-start lg:gap-4">
+            <h2
+              class="text-center text-2xl font-medium md:text-left md:text-3xl"
+            >
+              Vocational Training
+            </h2>
+            <img
+              src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+              alt=""
+              class="h-[300px] w-screen overflow-visible object-cover object-center md:hidden"
+            />
+            <p class="text-center text-base leading-relaxed md:text-left">
+              Imparting skills for success, paths to prosperity! Equipping young
+              ones with practical expertise, bridging the gap between education
+              and employment
+            </p>
+          </div>
+
+          <img
+            src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+            alt=""
+            class="hidden h-[300px] w-1/2 rounded-xl object-cover object-center md:inline lg:h-[400px]"
+          />
+        </div>
+        <!-- card -->
+
+        <div
+          class="card fade-in flex w-full max-w-[1700px] flex-col gap-3 md:flex-row md:items-center lg:gap-14"
+          id="counselling-center"
+        >
+          <img
+            src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+            alt=""
+            class="hidden h-[300px] w-1/2 rounded-xl object-cover object-center md:inline lg:h-[400px]"
+          />
+          <div class="flex flex-col items-center gap-3 md:items-start lg:gap-4">
+            <h2
+              class="text-center text-2xl font-medium md:text-left md:text-3xl"
+            >
+              Counselling center
+            </h2>
+            <img
+              src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+              alt=""
+              class="h-[300px] w-screen overflow-visible object-cover object-center md:hidden"
+            />
+            <p class="text-center text-base leading-relaxed md:text-left">
+              A safe space to nurturemental well-being, empowering individuals
+              to overcome challenges and thrive in life
+            </p>
+          </div>
+        </div>
+        <!-- card -->
+        <div
+          class="card fade-in flex w-full max-w-[1700px] flex-col gap-3 md:flex-row md:items-center lg:gap-14"
+          id="immunization-center"
+        >
+          <div class="flex flex-col items-center gap-3 md:items-start lg:gap-4">
+            <h2
+              class="text-center text-2xl font-medium md:text-left md:text-3xl"
+            >
+              Immunization Center
+            </h2>
+            <img
+              src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+              alt=""
+              class="h-[300px] w-screen overflow-visible object-cover object-center md:hidden"
+            />
+            <p class="text-center text-base leading-relaxed md:text-left">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+              ipsa itaque deserunt iste eaque vel unde numquam. Hic, quo
+              dignissimos at numquam laudantium est!
+            </p>
+          </div>
+
+          <img
+            src="../assests/what-we-do-page/what-we-do-card-images/1.jpg"
+            alt=""
+            class="hidden h-[300px] w-1/2 rounded-xl object-cover object-center md:inline lg:h-[400px]"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="box-sizing fade-in flex flex-col gap-2 bg-[#2BD1FC] p-2">
+      <div class="sociallinks">
+        <ul class="flex gap-2 text-xl lg:gap-4 lg:text-2xl">
+          <li class="transition-all duration-150 ease-in-out hover:text-white">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li class="transition-all duration-150 ease-in-out hover:text-white">
+            <a
+              href="https://www.instagram.com/shri.chaintanyamauliv.mandal?igsh=Z285dDRyd3V5bzhp"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+
+          <li class="transition-all duration-150 ease-in-out hover:text-white">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="links flex gap-4 text-white">
+        <a
+          href=""
+          class="transition-all duration-150 ease-in-out hover:text-black"
+          >Home</a
+        >
+        <a
+          href=""
+          class="transition-all duration-150 ease-in-out hover:text-black"
+          >What we do</a
+        >
+        <a
+          href=""
+          class="transition-all duration-150 ease-in-out hover:text-black"
+          >Contact us</a
+        >
+        <a
+          href=""
+          class="transition-all duration-150 ease-in-out hover:text-black"
+          >Contact us</a
+        >
+      </div>
+      <div>
+        <p class="font-bold">Visit us</p>
+        <div class="address text-white">
+          VH2J+XH5, near shanti ketan school, South Shivaji Nagar, Panchsheel
+          nagar,<br />
+          Sangli, Sangli Miraj Kupwad, Maharashtra 416416
+        </div>
+      </div>
+      <div class="copyright text-xs">
+        <p>&copy; Shri Chaitanya Mauli Vishwasta Mandai,Sangli</p>
+      </div>
+    </footer>
+    <script src="../scripts/what-we-do.js"></script>
+    <script src="../scripts/common.js"></script>
+  </body>
+</html>
