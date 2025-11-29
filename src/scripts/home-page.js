@@ -24,17 +24,7 @@ const swiper2 = new Swiper("#slider-2", {
     el: ".swiper-pagination",
   },
 });
-const dayCareSlider1 = new Swiper("#day-care-slider-1", {
-  direction: "horizontal",
-  loop: true,
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  centeredSlides: true,
 
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
 const swiper3 = new Swiper("#slider-3", {
   direction: "horizontal",
   loop: true,
@@ -46,6 +36,20 @@ const swiper3 = new Swiper("#slider-3", {
   pagination: {
     el: ".swiper-pagination",
   },
+  freeMode: {
+    enabled: true,
+    momentum: false,
+  },
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: false,
+    waitForTransition: false,
+  },
+
+  speed: 6000,
+  allowTouchMove: false,
 });
 function animateCount(el, target) {
   let count = 0;
