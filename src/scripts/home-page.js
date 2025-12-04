@@ -32,25 +32,32 @@ const swiper3 = new Swiper("#slider-3", {
   slidesPerView: "auto",
   spaceBetween: 20,
   centeredSlides: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  freeMode: {
-    enabled: true,
-    momentum: false,
-  },
-
+  freeMode: true,
+  speed: 6500,
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
     pauseOnMouseEnter: false,
     waitForTransition: false,
   },
-
-  speed: 6000,
   allowTouchMove: false,
+
+  on: {
+    click(swiper) {
+      // click ke baad agar ruk gaya ho to fir se chalu karo
+      if (!swiper.autoplay.running) {
+        swiper.autoplay.start();
+      }
+    },
+    touchEnd(swiper) {
+      // kabhi-kabhi touch ke baad bhi pause ho jaata hai
+      if (!swiper.autoplay.running) {
+        swiper.autoplay.start();
+      }
+    },
+  },
 });
+
 function animateCount(el, target) {
   let count = 0;
   const speed = target / 120;
