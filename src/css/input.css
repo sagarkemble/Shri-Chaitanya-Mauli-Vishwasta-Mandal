@@ -132,7 +132,7 @@ body {
   display: flex;
   justify-content: flex-start;
   width: max-content;
-  animation: scroll 30s linear infinite;
+  animation: scroll 45s linear infinite;
 }
 
 .swiper-slide {
