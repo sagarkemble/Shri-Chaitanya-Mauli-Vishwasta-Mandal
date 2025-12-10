@@ -136,6 +136,28 @@
       </nav>
     </header>
     <main>
+      <div
+        class="donation-popup fixed top-0 left-0 z-80 flex hidden h-full w-full items-center justify-center bg-[#00000050] p-6"
+      >
+        <div
+          class="popup flex max-w-2xl flex-col gap-2 rounded-xl bg-white p-4 font-bold"
+        >
+          <p class="text-xl">
+            The payment gateway is currently being set up. Until then, you can
+            make your donation using the bank details provided below.
+          </p>
+          <div class="bank-name font-semibold">
+            <p class="">Bank Name: State Bank of India</p>
+            <p class="">Account Number: 34775752264</p>
+            <p class="">IFSC Code: SBIN0001501</p>
+          </div>
+          <div
+            class="close-donation-popup flex cursor-pointer items-center gap-2"
+          >
+            <div class="button-hug-donate">Ok</div>
+          </div>
+        </div>
+      </div>
       <!-- herosection -->
       <div
         class="hero-section relative flex h-[480px] w-full flex-col justify-between overflow-hidden md:h-[540px] lg:h-[680px]"
@@ -248,13 +270,11 @@
         </div>
         <!-- description -->
         <div class="description text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam.
+          With over 40 years of community service, our initiatives have reached
+          thousands of students, families, and women. We work to ensure children
+          receive proper nutrition, value-based education, and a safe space to
+          learn and grow. Your support helps us expand our impact and continue
+          delivering essential programs to those who rely on us.
         </div>
         <!-- donate-for-container-->
         <div
@@ -281,12 +301,11 @@
                   ASHWATHAMA YOJANA
                 </div>
                 <div class="description">
-                  Contribution for daily food arrangement of creche,A donor can
-                  donate one time donation for providing ’mid-day meal‘ on any
-                  specific day of year
+                  A one-time donation of ₹29,000 for providing a complete
+                  mid-day meal to children on a chosen day of the year.
                 </div>
               </div>
-              <div class="button-hug">Donate</div>
+              <div class="button-hug open-donation-popup">Donate</div>
             </div>
             <!-- card -->
             <div
@@ -303,12 +322,12 @@
                   Akshay Thali
                 </div>
                 <div class="description">
-                  Contribution for daily food arrangement of creche,A donor can
-                  donate one time donation for providing ’mid-day meal‘ on any
-                  specific day of year
+                  A one-time donation of ₹15,000 (or 100 kg of grains) for
+                  providing nutritious mid-day snacks to children on any special
+                  day of the year.
                 </div>
               </div>
-              <div class="button-hug">Donate</div>
+              <div class="button-hug open-donation-popup">Donate</div>
             </div>
             <!-- card -->
             <div
@@ -325,12 +344,11 @@
                   Gau-ras-wati
                 </div>
                 <div class="description">
-                  Contribution for daily food arrangement of creche,A donor can
-                  donate one time donation for providing ’mid-day meal‘ on any
-                  specific day of year
+                  A one-time donation of ₹5,551 for providing milk to children
+                  on a selected special day.
                 </div>
               </div>
-              <div class="button-hug">Donate</div>
+              <div class="button-hug open-donation-popup">Donate</div>
             </div>
             <!-- card -->
             <div
@@ -347,70 +365,14 @@
                   give what you want
                 </div>
                 <div class="description">
-                  Contribution for daily food arrangement of creche,A donor can
-                  donate one time donation for providing ’mid-day meal‘ on any
-                  specific day of year
+                  Contribute any amount of your choice. Your donation helps
+                  support the children’s meals, education, and daily needs in
+                  the best possible way.
                 </div>
               </div>
-              <div class="button-hug">Donate</div>
+              <div class="button-hug open-donation-popup">Donate</div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- memories slider -->
-      <div
-        class="memories-container fade-in my-4 flex w-full flex-col items-center gap-3 md:my-8 lg:my-10 lg:gap-4"
-      >
-        <h2 class="text-2xl font-medium text-black lg:text-3xl">Memories</h2>
-        <div class="swiper h-[400px] w-full" id="slider-1">
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide !w-full max-w-[1100px]">
-              <img
-                src="../assests/support-us-page/slider-images/1.jpeg"
-                class="h-full w-full object-cover object-center lg:rounded-4xl"
-                alt=""
-                loading="lazy"
-              />
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide !w-full max-w-[1100px]">
-              <img
-                src="../assests/support-us-page/slider-images/1.jpeg"
-                class="h-full w-full object-cover object-center lg:rounded-4xl"
-                alt=""
-                loading="lazy"
-              />
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide !w-full max-w-[1100px]">
-              <img
-                src="../assests/support-us-page/slider-images/1.jpeg"
-                class="h-full w-full object-cover object-center lg:rounded-4xl"
-                alt=""
-                loading="lazy"
-              />
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide !w-full max-w-[1100px]">
-              <img
-                src="../assests/support-us-page/slider-images/1.jpeg"
-                class="h-full w-full object-cover object-center lg:rounded-4xl"
-                alt=""
-                loading="lazy"
-              />
-            </div>
-            <!-- Slides -->
-            <div class="swiper-slide !w-full max-w-[1100px]">
-              <img
-                src="../assests/support-us-page/slider-images/1.jpeg"
-                class="h-full w-full object-cover object-center lg:rounded-4xl"
-                alt=""
-                loading="lazy"
-              />
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
 

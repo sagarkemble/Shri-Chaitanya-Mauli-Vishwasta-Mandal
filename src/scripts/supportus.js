@@ -11,17 +11,7 @@ accordians.forEach((accordian) => {
     caret.classList.toggle("rotate-180");
   });
 });
-const swiper1 = new Swiper("#slider-1", {
-  direction: "horizontal",
-  loop: true,
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  centeredSlides: true,
 
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
 function animateCount(el, target) {
   let count = 0;
   const speed = target / 120;
@@ -54,6 +44,20 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.4 },
 );
+
+const popup = document.querySelector(".donation-popup");
+const openPopupButtons = document.querySelectorAll(".open-donation-popup");
+const closePopupButton = document.querySelector(".close-donation-popup");
+
+openPopupButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    popup.classList.remove("hidden");
+  });
+});
+
+closePopupButton.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
 
 const statsContainer = document.querySelector(".stats-container");
 if (statsContainer) observer.observe(statsContainer);
