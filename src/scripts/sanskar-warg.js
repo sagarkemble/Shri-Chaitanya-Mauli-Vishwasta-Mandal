@@ -21,4 +21,8 @@ const swiper1 = new Swiper("#slider-1", {
   pagination: {
     el: ".swiper-pagination",
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
