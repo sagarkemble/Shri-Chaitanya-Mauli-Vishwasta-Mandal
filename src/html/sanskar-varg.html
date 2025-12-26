@@ -508,56 +508,70 @@
         </div>
       </div>
     </main>
-    <footer class="flex flex-col gap-2 bg-[#2BD1FC] p-2">
-      <div class="sociallinks">
-        <ul class="flex gap-2 text-xl lg:gap-4 lg:text-2xl">
-          <li class="transition-all duration-50 ease-in-out hover:text-white">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-          </li>
-          <li class="transition-all duration-50 ease-in-out hover:text-white">
-            <a
-              href="https://www.instagram.com/shri.chaintanyamauliv.mandal?igsh=Z285dDRyd3V5bzhp"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </li>
+    <footer
+      class="flex w-full flex-col justify-between gap-2 bg-[#2BD1FC] p-4 md:px-16 lg:flex-row lg:items-center lg:gap-4 lg:px-[120px]"
+    >
+      <div class="wrapper-1 flex items-center gap-2 lg:max-w-44 lg:flex-col">
+        <img src="../assests/common-assets/logo.png" alt="" class="w-20" />
+        <div class="wrapper flex flex-col lg:items-center lg:gap-1">
+          <p class="font-medium lg:text-center">
+            Shri Chaitanya Mauli <br />
+            Vishwasta Mandal
+          </p>
+          <ul class="sociallinks flex w-fit gap-2 text-xl lg:gap-4 lg:text-2xl">
+            <li class="transition-all duration-50 ease-in-out hover:text-white">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li class="transition-all duration-50 ease-in-out hover:text-white">
+              <a
+                href="https://www.instagram.com/shri.chaintanyamauliv.mandal?igsh=Z285dDRyd3V5bzhp"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
 
-          <li class="transition-all duration-50 ease-in-out hover:text-white">
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-          </li>
-        </ul>
+            <li class="transition-all duration-50 ease-in-out hover:text-white">
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="links flex gap-4 text-white">
-        <a
-          href="../../index.html"
-          class="transition-all duration-50 ease-in-out hover:text-black"
-          >Home</a
-        >
-        <a
-          href="who-we-are.html"
-          class="transition-all duration-50 ease-in-out hover:text-black"
-          >Who we are</a
-        >
-        <a
-          href="what-we-do.html"
-          class="transition-all duration-50 ease-in-out hover:text-black"
-          >What we do</a
-        >
-        <a
-          href="support-us.html"
-          class="transition-all duration-50 ease-in-out hover:text-black"
-          >Support us</a
-        >
-        <a
-          href="contact-us.html"
-          class="transition-all duration-50 ease-in-out hover:text-black"
-          >Contact us</a
-        >
+
+      <div class="wrapper-2 links flex flex-col text-white lg:max-w-80">
+        <p class="font-medium text-black">Quick Links</p>
+        <div class="links-wrapper flex flex-wrap gap-x-4 lg:flex-col">
+          <a
+            href="../../index.html"
+            class="transition-all duration-50 ease-in-out hover:text-black"
+            >Home</a
+          >
+          <a
+            href="./who-we-are.html"
+            class="transition-all duration-50 ease-in-out hover:text-black"
+            >Who we are</a
+          >
+          <a
+            href="./what-we-do.html"
+            class="transition-all duration-50 ease-in-out hover:text-black"
+            >What we do</a
+          >
+          <a
+            href="./support-us.html"
+            class="transition-all duration-50 ease-in-out hover:text-black"
+            >Support us</a
+          >
+          <a
+            href="./contact-us.html"
+            class="transition-all duration-50 ease-in-out hover:text-black"
+            >Contact us</a
+          >
+        </div>
       </div>
-      <a href="contact-us.html">
+
+      <a href="./contact-us.html" class="wrapper-3 lg:max-w-64">
         <div>
           <p class="font-medium">Visit us</p>
-          <div class="address text-white">
+          <div class="address w-full text-white">
             VH2J+XH5, near shanti ketan school, South Shivaji Nagar, Panchsheel
             nagar,<br />
             Sangli, Sangli Miraj Kupwad, Maharashtra 416416
@@ -565,7 +579,7 @@
         </div>
       </a>
 
-      <div>
+      <div class="wrapper-4 lg:max-w-96">
         <p class="font-medium">Registration Details</p>
         <div class="address text-white">
           Mumbai public trust registration F-729 , sangli <br />
@@ -573,11 +587,10 @@
           Registration number : MAH/777/SLI <br />
           Registered under 80G <br />
           PAN NO : AAATC1114D <br />
+          <div class="copyright text-xs">
+            <p>&copy; Shri Chaitanya Mauli Vishwasta Mandai,Sangli</p>
+          </div>
         </div>
-      </div>
-
-      <div class="copyright text-xs">
-        <p>&copy; Shri Chaitanya Mauli Vishwasta Mandai,Sangli</p>
       </div>
     </footer>
     <script src="../scripts/daycare.js"></script>

@@ -45,19 +45,5 @@ const observer = new IntersectionObserver(
   { threshold: 0.4 },
 );
 
-const popup = document.querySelector(".donation-popup");
-const openPopupButtons = document.querySelectorAll(".open-donation-popup");
-const closePopupButton = document.querySelector(".close-donation-popup");
-
-openPopupButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    popup.classList.remove("hidden");
-  });
-});
-
-closePopupButton.addEventListener("click", () => {
-  popup.classList.add("hidden");
-});
-
 const statsContainer = document.querySelector(".stats-container");
 if (statsContainer) observer.observe(statsContainer);
