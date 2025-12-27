@@ -58,9 +58,17 @@ body {
     4px 4px 8px rgba(0, 0, 0, 0.6),
     6px 6px 12px rgba(0, 0, 0, 0.4);
 }
+.bottom-overlay-index-page {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0.78) 69%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
 .bottom-overlay {
   background: linear-gradient(
-    to bottom,
+    to top,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 0.78) 69%,
     rgba(255, 255, 255, 0) 100%
