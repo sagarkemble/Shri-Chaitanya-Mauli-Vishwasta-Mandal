@@ -29,6 +29,7 @@ const swiper2 = new Swiper("#slider-2", {
   },
 });
 
+// stats counter animation
 function animateCount(el, target) {
   let count = 0;
   const speed = target / 120;
@@ -45,7 +46,6 @@ function animateCount(el, target) {
 
   update();
 }
-
 const observer = new IntersectionObserver(
   (entries, obs) => {
     entries.forEach((entry) => {
@@ -61,6 +61,20 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.4 },
 );
-
 const statsContainer = document.querySelector(".stats-container");
 if (statsContainer) observer.observe(statsContainer);
+
+// feedBackForm
+const feedBackForm = document.querySelector(".feedback-form");
+const closeFeedBackFormBtn = document.querySelector(".close-form-btn");
+setTimeout(() => {
+  feedBackForm.classList.remove("invisible");
+  feedBackForm.classList.add("opacity-100");
+}, 25000);
+closeFeedBackFormBtn.addEventListener("click", () => {
+  feedBackForm.classList.remove("opacity-100");
+  feedBackForm.classList.add("opacity-0");
+  setTimeout(() => {
+    feedBackForm.classList.add("invisible");
+  }, 300);
+});

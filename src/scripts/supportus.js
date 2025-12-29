@@ -12,6 +12,7 @@ accordians.forEach((accordian) => {
   });
 });
 
+// stats counter animation
 function animateCount(el, target) {
   let count = 0;
   const speed = target / 120;
@@ -28,7 +29,6 @@ function animateCount(el, target) {
 
   update();
 }
-
 const observer = new IntersectionObserver(
   (entries, obs) => {
     entries.forEach((entry) => {
@@ -44,6 +44,5 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.4 },
 );
-
 const statsContainer = document.querySelector(".stats-container");
 if (statsContainer) observer.observe(statsContainer);

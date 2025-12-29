@@ -13,7 +13,6 @@ subLinkToggleButon.addEventListener("click", () => {
   subLink.classList.toggle("pt-2");
   subLink.classList.toggle("lg:pb-4");
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   const faders = document.querySelectorAll(".fade-in");
 
